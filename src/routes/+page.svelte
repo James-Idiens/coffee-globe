@@ -1,7 +1,3 @@
-<script>
-	import heroimage from '$lib/assets/heroimage.webp';
-</script>
-
 <header
 	class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"
 >
@@ -37,6 +33,6 @@
 
 <style>
 	.custom-img {
-		background-image: url({heroimage});
+		background-image: url('./heroimage.webp');
 	}
 </style>
