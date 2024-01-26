@@ -16,17 +16,17 @@
 		);
 
 		anime
-			.timeline({ loop: true })
+			.timeline()
 			.add({
 				targets: '.ml11 .letter',
 				opacity: [0, 1],
 				easing: 'easeOutExpo',
 				duration: 600,
-				delay: (el, i) => 34 * i // Adjust delay if necessary
+				delay: (el, i) => 34 * i
 			})
 			.add({
 				targets: '.ml11',
-				opacity: 0,
+				opacity: 1,
 				duration: 1000,
 				easing: 'easeOutExpo',
 				delay: 1000
@@ -55,11 +55,12 @@
 			{#each coffees as coffee}
 				<a
 					href={`/${coffee.country.toLowerCase().replace(/\s/g, '-')}`}
-					class="rounded-lg shadow-lg bg-white overflow-hidden block"
+					class="max-w-sm m-2 overflow-hidden rounded"
 				>
-					<div class="text-center">
-						<img src={coffee.flag} alt={`${coffee.country} Flag`} class="bg-cover mx-auto mb-2" />
-						<h2 class="text-xl font-bold">{coffee.country}</h2>
+					<img src={coffee.flag} alt={`${coffee.country} Flag`} class="w-full h-3/4" />
+
+					<div class="px-6 py-4">
+						<h2 class="mb-2 text-2xl font-bold text-white text-center">{coffee.country}</h2>
 					</div>
 				</a>
 			{/each}
