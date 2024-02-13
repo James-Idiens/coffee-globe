@@ -7,7 +7,7 @@
 			"producer": "Maurico Salvatierra",
 			"process": "Natural",
 			"variety": "Bourbon",
-			"image": "el_salvador.jpg",
+			"image": "./el-salvador.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
 			"review": "An omni roast coffee from El Salvador, this natural processed Bourbon variety from Maurico Salvatierra offers a rich and punchy espresso."
 		},
