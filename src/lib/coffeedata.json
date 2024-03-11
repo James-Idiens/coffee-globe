@@ -8,8 +8,7 @@
 			"process": "Natural",
 			"variety": "Bourbon",
 			"image": "./el-salvador.webp",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
-			"review": "An omni roast coffee from El Salvador, this natural processed Bourbon variety from Maurico Salvatierra offers a rich and punchy espresso."
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
 		},
 		{
 			"country": "Colombia",
@@ -18,9 +17,8 @@
 			"producer": "Hacienda La Pradera",
 			"process": "Natural",
 			"variety": "Caturra",
-			"image": "colombia.jpg",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
-			"review": "This Colombian coffee from Hacienda La Pradera in Huila offers a rich blend of caramel, berry, and cocoa flavors. It's a natural processed Caturra variety, known for its sweet and fruity profile. A delightful choice for coffee enthusiasts!"
+			"image": "colombia.webp",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
 		}
 	]
 }
