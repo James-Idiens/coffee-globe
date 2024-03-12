@@ -47,11 +47,11 @@
         <div class="col-span-1 md:col-span-1 mx-auto md:mx-0 bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div class="p-6">
                 <h1 class="text-3xl font-bold text-white mb-4">Country: {coffee.country}</h1>
-                <p class="text-gray-400">Region: {coffee.region}</p>
-                <p class="text-gray-400">Producer: {coffee.producer}</p>
-                <p class="text-gray-400">Process: {coffee.process}</p>
-                <p class="text-gray-400">Variety: {coffee.variety}</p>
-                <p class="text-gray-400">Tasting Notes: {coffee.tastingNotes.join(', ')}</p>
+                <p class="text-gray-400"><span class="font-bold">Region: </span>{coffee.region}</p>
+                <p class="text-gray-400"><span class="font-bold">Producer: </span>{coffee.producer}</p>
+                <p class="text-gray-400"><span class="font-bold">Process: </span>{coffee.process}</p>
+                <p class="text-gray-400"><span class="font-bold">Variety: </span>{coffee.variety}</p>
+                <p class="text-gray-400"><span class="font-bold">Tasting Notes: </span>{coffee.tastingNotes.join(', ')}</p>
             </div>
         </div>
         <div class="col-span-1 md:col-span-1 mx-auto md:mx-0">

@@ -19,6 +19,46 @@
 			"variety": "Caturra",
 			"image": "colombia.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+		},
+		{
+			"country": "Kenya",
+			"region": "Nyeri",
+			"tastingNotes": ["Fanta", "Apricot", "Peach"],
+			"producer": "Gachatha co-op",
+			"process": "Washed",
+			"variety": "SL-34, Batian",
+			"image": "kenya.webp",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Kenya_African_Union.svg/2560px-Flag_of_the_Kenya_African_Union.svg.png"
+		},
+		{
+			"country": "Indonesia",
+			"region": "Sibalanga",
+			"tastingNotes": ["Cocoa", "Citric", "Smooth", "Lime"],
+			"producer": "Various",
+			"process": "Washed (wet hulled)",
+			"variety": "Catimor, Typica and Red Leaf Typica",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+		},
+		{
+			"country": "Ethiopia",
+			"region": "Yirgacheffe",
+			"tastingNotes": ["Orange Blossom", "Nectarine", "Green Tea", "Brown Sugar"],
+			"producer": "Banko Gotiti",
+			"process": "Sun dried natural",
+			"variety": "Mixed",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethiopia_Flag.svg"
+		},
+		{
+			"country": "Costa Rica",
+			"region": "Santa Teresa",
+			"tastingNotes": ["Lavender", "Blueberry", "Candied Fruits"],
+			"producer": "Roger Ureña Hidalgo",
+			"process": "Natural",
+			"variety": "Gesha",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"
 		}
 	]
 }

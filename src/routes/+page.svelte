@@ -43,7 +43,7 @@
 		<div class="p-5">
 			<h1 class="ml11">
 				<span class="text-wrapper">
-					<span class="letters text-white">Around the World in 80 Cups</span>
+					<span class="letters text-white">Coffee around the world</span>
 				</span>
 			</h1>
 		</div>
@@ -51,16 +51,16 @@
 
 	<!-- Country Cards Section -->
 	<div class="container mx-auto py-12">
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
 			{#each coffees as coffee}
 				<a
 					href={`/${coffee.country.toLowerCase().replace(/\s/g, '-')}`}
 					class="max-w-sm m-2 overflow-hidden rounded"
 				>
-					<img src={coffee.flag} alt={`${coffee.country} Flag`} class="w-full h-3/4" />
+					<img src={coffee.flag} alt={`${coffee.country} Flag`} class="w-full h-1/2 lg:h-3/4" />
 
 					<div class="px-6 py-4">
-						<h2 class="mb-2 text-2xl font-bold text-white text-center">{coffee.country}</h2>
+						<h2 class="mb-2 text-lg lg:text-2xl font-bold text-white text-center">{coffee.country}</h2>
 					</div>
 				</a>
 			{/each}
