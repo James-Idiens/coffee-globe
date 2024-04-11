@@ -59,6 +59,37 @@
 			"variety": "Gesha",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"
-		}
+		},
+		{
+		    "country": "Brazil",
+		    "region": "Colinas Reserve",
+		    "tastingNotes": ["Caramel", "Chocolate", "Orange"],
+		    "process": "Natural",
+		    "variety": "Mix Varieties",
+		    "image": "https://static.wixstatic.com/media/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg/v1/fill/w_1146,h_1095,al_c,q_85/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg",
+		    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
+		},
+		{
+		    "country": "Thailand",
+		    "region": "Chiang Rai",
+		    "tastingNotes": ["Coconut", "Milk Choc", "Toasted Marshmallow"],
+		    "producer": "The Merlaeku Family x Beanspire",
+		    "process": "Natural",
+		    "variety": "Catuai, Typica, Chiang Mai",	
+		    "image": "https://th.bing.com/th/id/OIP.YjTiOTc-zzzYCKbIPqkvlwHaHa?rs=1&pid=ImgDetMain",
+		    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
+		},
+		{
+		    "country": "Honduras",
+		    "region": "San Matias",
+		    "tastingNotes": ["Milk Chocolate", "Brown Sugar", "Pecan", "Delicate Acidity"],
+		    "producer": "Jesus Rivera Erazo",
+		    "process": "Washed",
+		    "variety": "Pacas",
+		    "image": "#",
+		    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"
+		},
+
+		
 	]
 }
