@@ -59,6 +59,26 @@
 			"variety": "Gesha",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"
+		},
+		{
+			"country": "Burundi",
+			"region": "Muyinga",
+			"tastingNotes": ["Chocolate", "Winey", "Grape"],
+			"producer": "Unknown",
+			"process": "Washed",
+			"variety": "Red Bourbon",
+			"image": "https://vivaceespresso.co.nz/cdn/shop/files/Burundi1kg_700x.png?v=1687817392",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"
+		},
+		{
+			"country": "Vietnam",
+			"region": "Da Lat",
+			"tastingNotes": ["Caramel", "Chocolate", "Nutty"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "Catimor, Typica",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
 		}
 	]
 }
