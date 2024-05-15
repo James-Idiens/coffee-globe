@@ -23,6 +23,7 @@
 			const countryName = slug ? slug.replace(/-/g, ' ') : '';
 
 			coffee = coffeeData.coffees.find(
+                
 				(c: Coffee) => c.country.toLowerCase() === countryName.toLowerCase()
 			);
 		}

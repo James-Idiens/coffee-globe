@@ -108,6 +108,46 @@
 			"variety": "Pacas",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"
+		},
+		{
+			"country": "New Zealand",
+			"region": "Pekerua Hills",
+			"tastingNotes": ["Apricot", "Brazil Nut", "Brown Sugar", "White Tea"],
+			"producer": "Ikarus Coffee",
+			"process": "washed",
+			"variety": "Bourbon pointu",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
+		},
+		{
+			"country": "DRC",
+			"region": "Kivu",
+			"tastingNotes": ["Black Tea", "Lemon", "Caramel", "Cocoa"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "Bourbon",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg"
+		},
+		{
+			"country": "Panama",
+			"region": "Chiriqui",
+			"tastingNotes": ["Dried Apricot", "Brown Sugar", "Black Tea"],
+			"producer": "Carmen Estate",
+			"process": "Washed",
+			"variety": "Caturra",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+		},
+		{
+			"country": "Tanzania",
+			"region": "Mondul",
+			"tastingNotes": ["Early Grey", "Chocolate", "Blueberry"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "unknown",
+			"image": "#",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg"
 		}
 	]
 }
