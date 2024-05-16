@@ -9,7 +9,7 @@
 <div class="bg-fixed bg-center bg-cover custom-img">
 	<!-- Country Cards Section -->
 	<div class="container mx-auto py-12 md:px-9">
-		<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
 			{#each coffees as coffee}
 				<a
 					href={`/${coffee.country.toLowerCase().replace(/\s/g, '-')}`}
@@ -31,18 +31,5 @@
 <style>
 	.custom-img {
 		background-color: rgb(12, 12, 12);
-	}
-
-	.ml11 {
-		font-weight: 700;
-		font-size: 3.5em;
-	}
-
-	.ml11 .text-wrapper {
-		position: relative;
-		display: inline-block;
-		padding-top: 0.1em;
-		padding-right: 0.05em;
-		padding-bottom: 0.15em;
 	}
 </style>

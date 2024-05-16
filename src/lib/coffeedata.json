@@ -37,7 +37,7 @@
 			"producer": "Various",
 			"process": "Washed (wet hulled)",
 			"variety": "Catimor, Typica and Red Leaf Typica",
-			"image": "#",
+			"image": "https://coffeesupreme.com/cdn/shop/products/IndonesiaSIBALANGA_1296x.png?v=1659065485",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
 		},
 		{
@@ -120,10 +120,10 @@
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
 		},
 		{
-			"country": "DRC",
+			"country": "Democratic Republic of the Congo",
 			"region": "Kivu",
 			"tastingNotes": ["Black Tea", "Lemon", "Caramel", "Cocoa"],
-			"producer": "Various",
+			"producer": "SOPACDI",
 			"process": "Washed",
 			"variety": "Bourbon",
 			"image": "#",
@@ -141,7 +141,7 @@
 		},
 		{
 			"country": "Tanzania",
-			"region": "Mondul",
+			"region": "Mondul AB",
 			"tastingNotes": ["Early Grey", "Chocolate", "Blueberry"],
 			"producer": "Various",
 			"process": "Washed",
