@@ -8,7 +8,9 @@
 			"process": "Natural",
 			"variety": "Bourbon",
 			"image": "./el-salvador.webp",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Colombia",
@@ -18,7 +20,9 @@
 			"process": "Natural",
 			"variety": "Caturra",
 			"image": "colombia.webp",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Kenya",
@@ -28,7 +32,9 @@
 			"process": "Washed",
 			"variety": "SL-34, Batian",
 			"image": "kenya.webp",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Kenya_African_Union.svg/2560px-Flag_of_the_Kenya_African_Union.svg.png"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Kenya_African_Union.svg/2560px-Flag_of_the_Kenya_African_Union.svg.png",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Indonesia",
@@ -38,7 +44,9 @@
 			"process": "Washed (wet hulled)",
 			"variety": "Catimor, Typica and Red Leaf Typica",
 			"image": "https://coffeesupreme.com/cdn/shop/products/IndonesiaSIBALANGA_1296x.png?v=1659065485",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Ethiopia",
@@ -48,7 +56,9 @@
 			"process": "Sun dried natural",
 			"variety": "Mixed",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethiopia_Flag.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethiopia_Flag.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Costa Rica",
@@ -58,7 +68,9 @@
 			"process": "Natural",
 			"variety": "Gesha",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Burundi",
@@ -68,7 +80,9 @@
 			"process": "Washed",
 			"variety": "Red Bourbon",
 			"image": "https://vivaceespresso.co.nz/cdn/shop/files/Burundi1kg_700x.png?v=1687817392",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Vietnam",
@@ -78,7 +92,9 @@
 			"process": "Washed",
 			"variety": "Catimor, Typica",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Brazil",
@@ -87,7 +103,9 @@
 			"process": "Natural",
 			"variety": "Mix Varieties",
 			"image": "https://static.wixstatic.com/media/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg/v1/fill/w_1146,h_1095,al_c,q_85/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Thailand",
@@ -97,7 +115,9 @@
 			"process": "Natural",
 			"variety": "Catuai, Typica, Chiang Mai",
 			"image": "https://th.bing.com/th/id/OIP.YjTiOTc-zzzYCKbIPqkvlwHaHa?rs=1&pid=ImgDetMain",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Honduras",
@@ -107,7 +127,9 @@
 			"process": "Washed",
 			"variety": "Pacas",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "New Zealand",
@@ -117,7 +139,9 @@
 			"process": "washed",
 			"variety": "Bourbon pointu",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Democratic Republic of the Congo",
@@ -127,7 +151,9 @@
 			"process": "Washed",
 			"variety": "Bourbon",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Panama",
@@ -137,7 +163,9 @@
 			"process": "Washed",
 			"variety": "Caturra",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		},
 		{
 			"country": "Tanzania",
@@ -147,7 +175,9 @@
 			"process": "Washed",
 			"variety": "unknown",
 			"image": "#",
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg"
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
+			"James' comments": "",
+			"Ed's comments": ""
 		}
 	]
 }

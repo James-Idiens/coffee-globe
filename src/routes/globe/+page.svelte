@@ -1,17 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import coffees from '../../lib/coffeedata.json'; // Assuming coffees.json is in the same directory
+	import type { Coffee } from '../../models/interfaces';
 
-	interface Coffee {
-		country: string;
-		region: string;
-		tastingNotes: string[];
-		producer: string;
-		process: string;
-		variety: string;
-		image: string;
-		flag: string;
-	}
 	let Globe;
 
 	const coffeeMap = new Map(coffees.coffees.map((coffee) => [coffee.country, coffee]));
@@ -34,7 +25,7 @@
 				.hexPolygonUseDots(true)
 				.hexPolygonColor((d: any) => {
 					if (countriesTried.has(d.properties.ADMIN)) {
-						// Color the countries you've tried with random colors
+						// Random color for countries tried
 						return `#${Math.round(Math.random() * Math.pow(2, 24))
 							.toString(16)
 							.padStart(6, '0')}`;
@@ -51,15 +42,25 @@
 						// Country names of coffees we've tried
 						const coffeeInfo: Coffee = coffeeMap.get(d.ADMIN) as Coffee;
 						return `
+
+						<div>
+							<div class="bg-gray bg-opacity-50 p-2 rounded-md">
 							<b>${d.ADMIN}</b> <br />
 							Region: ${coffeeInfo.region} <br />
 							Tasting Notes: ${coffeeInfo.tastingNotes.join(', ')} <br />
 							Producer: ${coffeeInfo.producer} <br />
 							Process: ${coffeeInfo.process} <br />
 							Variety: ${coffeeInfo.variety} <br />
+							</div>
 							`;
 					}
+				})
+				.onHexPolygonClick((polygon: { properties: { ADMIN: any } }) => {
+					const countryName = polygon.properties.ADMIN;
+					const newUrl = `http://localhost:5173/${countryName.toLowerCase()}`;
+					window.location.href = newUrl;
 				})(document.getElementById('globeViz') as HTMLElement);
+			document.getElementById('globeViz') as HTMLElement;
 		}
 	});
 </script>

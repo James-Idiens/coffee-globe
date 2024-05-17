@@ -2,17 +2,8 @@
 	import { onDestroy, onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import coffeeData from '$lib/coffeedata.json';
+	import type { Coffee } from '../../models/interfaces';
 
-	interface Coffee {
-		country: string;
-		region: string;
-		tastingNotes: string[];
-		producer: string;
-		process: string;
-		variety: string;
-		image: string;
-		flag: string;
-	}
 
 	const slug = $page.params.slug;
 	let coffee: Coffee | undefined;
@@ -22,6 +13,7 @@
 			const countryName = slug ? slug.replace(/-/g, ' ') : '';
 
 			coffee = coffeeData.coffees.find(
+				//@ts-ignore
 				(c: Coffee) => c.country.toLowerCase() === countryName.toLowerCase()
 			);
 		}
