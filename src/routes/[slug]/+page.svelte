@@ -4,7 +4,6 @@
 	import coffeeData from '$lib/coffeedata.json';
 	import type { Coffee } from '../../models/interfaces';
 
-
 	const slug = $page.params.slug;
 	let coffee: Coffee | undefined;
 
@@ -49,13 +48,21 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-span-1 md:col-span-1 mx-auto md:mx-0">
-			<!-- Placeholder for map -->
+		<div class="col-span-1 md:col-span-1 mx-auto md:mx-0 text-white p-2">
+			<p>
+				<span class="font-medium text-lg">Ed's Comments:</span><br />
+				<i>{coffee["Ed's comments"]}</i>
+			</p>
+			<p class="mt-2">
+				<span class="font-medium text-lg">James' Comments:</span><br />
+				<i>{coffee["James' comments"]}</i>
+			</p>
 		</div>
 	{:else}
 		<p class="text-white col-span-1">Country not found!</p>
 	{/if}
-	<a href="/" class="absolute top-3 left-3 z-10">
+	<!-- svelte-ignore a11y-invalid-attribute -->
+	<a href="javascript:history.back()" class="absolute top-3 left-3 z-10">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

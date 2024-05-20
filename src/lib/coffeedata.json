@@ -9,7 +9,7 @@
 			"variety": "Bourbon",
 			"image": "./el-salvador.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
-			"James' comments": "",
+			"James' comments": "Super punchy espresso with plenty of character. This coffee is a great example of a natural processed coffee, with quite an obvious fruity flavour profile. Best suited to a long black.",
 			"Ed's comments": ""
 		},
 		{
@@ -33,7 +33,7 @@
 			"variety": "SL-34, Batian",
 			"image": "kenya.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Kenya_African_Union.svg/2560px-Flag_of_the_Kenya_African_Union.svg.png",
-			"James' comments": "",
+			"James' comments": "You can pick out Kenyan coffee from a mile away. This one is no exception, with a bright acidity and a fruity flavour profile.",
 			"Ed's comments": ""
 		},
 		{
@@ -45,7 +45,7 @@
 			"variety": "Catimor, Typica and Red Leaf Typica",
 			"image": "https://coffeesupreme.com/cdn/shop/products/IndonesiaSIBALANGA_1296x.png?v=1659065485",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
-			"James' comments": "",
+			"James' comments": "Luxurious thick smooth body with plenty of cocoa notes. Excellent darker roast espresso.",
 			"Ed's comments": ""
 		},
 		{
@@ -57,7 +57,7 @@
 			"variety": "Mixed",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethiopia_Flag.svg",
-			"James' comments": "",
+			"James' comments": "Blueberry is the first thing that comes to mind when tasting this coffee. Versatile and can be enjoyed as a filter or espresso.",
 			"Ed's comments": ""
 		},
 		{
@@ -69,7 +69,7 @@
 			"variety": "Gesha",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg",
-			"James' comments": "",
+			"James' comments": "A rare and expensive coffee, gesha is known for its floral and fruity notes. The flavour profile comes through better with age.",
 			"Ed's comments": ""
 		},
 		{
@@ -81,7 +81,7 @@
 			"variety": "Red Bourbon",
 			"image": "https://vivaceespresso.co.nz/cdn/shop/files/Burundi1kg_700x.png?v=1687817392",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg",
-			"James' comments": "",
+			"James' comments": "Open the bag and you're greeted with a distrubingly dark roast. Disgusting as a filter coffee, but redeems itself as a long black or with milk.",
 			"Ed's comments": ""
 		},
 		{
@@ -93,7 +93,7 @@
 			"variety": "Catimor, Typica",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
-			"James' comments": "",
+			"James' comments": "As the number two coffee producer in the world, we were obligated to try this.",
 			"Ed's comments": ""
 		},
 		{
@@ -104,7 +104,7 @@
 			"variety": "Mix Varieties",
 			"image": "https://static.wixstatic.com/media/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg/v1/fill/w_1146,h_1095,al_c,q_85/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
-			"James' comments": "",
+			"James' comments": "Another solid customer from the largest producer of coffee in the world. The natural process keeps it interesting and the roast level is right on the edge.",
 			"Ed's comments": ""
 		},
 		{
@@ -116,7 +116,7 @@
 			"variety": "Catuai, Typica, Chiang Mai",
 			"image": "https://th.bing.com/th/id/OIP.YjTiOTc-zzzYCKbIPqkvlwHaHa?rs=1&pid=ImgDetMain",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
-			"James' comments": "",
+			"James' comments": "If you close your eyes and convince yourself, you could taste the coconut. Interesting, but not a favourite.",
 			"Ed's comments": ""
 		},
 		{
@@ -128,7 +128,7 @@
 			"variety": "Pacas",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg",
-			"James' comments": "",
+			"James' comments": "Quite sweet and delicate, if a little boring. Good as a filter but can pass for an espresso. Certainly better than the other Honduran coffee we tried.",
 			"Ed's comments": ""
 		},
 		{
@@ -136,11 +136,11 @@
 			"region": "Pekerua Hills",
 			"tastingNotes": ["Apricot", "Brazil Nut", "Brown Sugar", "White Tea"],
 			"producer": "Ikarus Coffee",
-			"process": "washed",
+			"process": "Honey processed",
 			"variety": "Bourbon pointu",
-			"image": "#",
+			"image": "https://www.ikaruscoffee.co.nz/uploads/1/1/8/1/118134016/s581255655264912618_p10_i3_w2736.jpeg?width=640",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
-			"James' comments": "",
+			"James' comments": "Sumptuous, opulant, and eye-wateringly expensive. The only coffee grown in New Zealand, and it's a good one. Wonderfully fresh, this is perhaps one of the rare times where the price is justified.",
 			"Ed's comments": ""
 		},
 		{
@@ -152,7 +152,7 @@
 			"variety": "Bourbon",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg",
-			"James' comments": "",
+			"James' comments": "Hand roasted by Harris House's own chief roaster Ed, this was an experimental batch with surprising results.",
 			"Ed's comments": ""
 		},
 		{
@@ -164,7 +164,7 @@
 			"variety": "Caturra",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
-			"James' comments": "",
+			"James' comments": "Fruity and acidic, it is a classic filter profile. Very light roast.",
 			"Ed's comments": ""
 		},
 		{
@@ -176,6 +176,42 @@
 			"variety": "unknown",
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
+			"James' comments": "Delicate on the palate, with a light body and reminiscent of a Kenyan coffee. Excellent as a pour over in the Kalita Wave.",
+			"Ed's comments": "This coffee is a great example of a washed African coffee. It has a bright acidity and a light body. It is a great coffee to have as a pour over or as a filter coffee."
+		},
+		{
+			"country": "Papua New Guinea",
+			"region": "Waghi Valley, Western Highlands",
+			"tastingNotes": ["Dried fruit", "Dark Chocolate", "Sweet Spices"],
+			"producer": "Ulya Estate",
+			"process": "Washed",
+			"variety": "Typica and Arusha",
+			"image": "https://c4coffee.co/cdn/shop/files/50f277973d505a9e254920851746e795.png?v=1697169394",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
+			"James' comments": "Darkly roasted and suited to espresso. Dark chocolate is the dominant flavour.",
+			"Ed's comments": ""
+		},
+		{
+			"country": "Peru",
+			"region": "Cajamarca",
+			"tastingNotes": ["Almond", "Toffee", "Citrus", "Smokey finish"],
+			"producer": "Cenfrocafe",
+			"process": "Washed",
+			"variety": "Typica, Caturra, Bourbon, Pache, Catimor",
+			"image": "https://c4coffee.co/cdn/shop/files/40588ef97f9c73528f63977e49f7fc2a.png?v=1697169411",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
+			"James' comments": "So darkly roasted it's almost a disservice to Peru. Acceptable but quite frankly could be coffee from anywhere. Inexpensive and used in blends, it's easy to see why.",
+			"Ed's comments": ""
+		},
+		{
+			"country": "Rwanda",
+			"region": "Nyamasheke District",
+			"tastingNotes": ["Caramel", "Smooth", "Citric", "Red Currant"],
+			"producer": "Rugali Washing Station",
+			"process": "Washed",
+			"variety": "Red Bourbon",
+			"image": "https://coffeesupreme.com/cdn/shop/files/RwandaRugaliBagImage_1600x.png?v=1713938850",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg",
 			"James' comments": "",
 			"Ed's comments": ""
 		}
