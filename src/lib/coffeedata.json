@@ -98,8 +98,9 @@
 		},
 		{
 			"country": "Brazil",
-			"region": "Colinas Reserve",
+			"region": "Carmo de Minas",
 			"tastingNotes": ["Caramel", "Chocolate", "Orange"],
+			"producer": "Colinas Reserve",
 			"process": "Natural",
 			"variety": "Mix Varieties",
 			"image": "https://static.wixstatic.com/media/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg/v1/fill/w_1146,h_1095,al_c,q_85/0aecdc_e7cadca8c4a74ce6965d92991dc86d18~mv2.jpg",
@@ -200,7 +201,7 @@
 			"variety": "Typica, Caturra, Bourbon, Pache, Catimor",
 			"image": "https://c4coffee.co/cdn/shop/files/40588ef97f9c73528f63977e49f7fc2a.png?v=1697169411",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
-			"James' comments": "So darkly roasted it's almost a disservice to Peru. Acceptable but quite frankly could be coffee from anywhere. Inexpensive and used in blends, it's easy to see why.",
+			"James' comments": "So darkly roasted it's a disservice to Peru. Acceptable but quite frankly could be coffee from anywhere. Inexpensive and used in blends, it's easy to see why.",
 			"Ed's comments": ""
 		},
 		{
@@ -212,8 +213,21 @@
 			"variety": "Red Bourbon",
 			"image": "https://coffeesupreme.com/cdn/shop/files/RwandaRugaliBagImage_1600x.png?v=1713938850",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg",
-			"James' comments": "",
+			"James' comments": "Fits the bill for an easy drinking filter. Not too acidic, not too sweet, just smooth and balanced.",
 			"Ed's comments": ""
+		},
+		{
+			"country": "Mexico",
+			"region": "Chiapas",
+			"tastingNotes": ["Sweet", "Creamy", "Hazelnut", "Faintly Herby"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "Typica, Bourbon",
+			"image": "",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+			"James' comments": "Dark roasted by C1 Coffee only suitable as an espresso or milk based drink. The roast level is too dark to appreciate the origin characteristics.",
+			"Ed's comments": ""
+		
 		}
 	]
 }

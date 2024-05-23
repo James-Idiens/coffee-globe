@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import coffees from '../lib/coffeedata.json'; // Assuming coffees.json is in the same directory
+	import coffees from '../lib/coffeedata.json'; 
 	import type { Coffee } from '../models/interfaces';
 
 	export let Globe;
@@ -17,7 +17,8 @@
 			const response = await fetch('src/lib/ne_110m_admin_0_countries.geojson');
 			const countries = await response.json();
 
-			Globe()
+			// Initialize the Globe instance
+			const globeInstance = Globe()
 				.globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
 				.hexPolygonsData(countries.features)
 				.hexPolygonResolution(3)
@@ -42,7 +43,6 @@
 						// Country names of coffees we've tried
 						const coffeeInfo: Coffee = coffeeMap.get(d.ADMIN) as Coffee;
 						return `
-
 						<div>
 							<div class="bg-gray-800 bg-opacity-90 p-2 rounded-md">
 							<b class='font-bold text-lg'>${d.ADMIN}</b> <br />
@@ -52,7 +52,8 @@
 							Process: ${coffeeInfo.process} <br />
 							Variety: ${coffeeInfo.variety} <br />
 							</div>
-							`;
+						</div>
+						`;
 					}
 				})
 				.onHexPolygonClick((polygon: { properties: { ADMIN: any } }) => {
@@ -61,7 +62,13 @@
 					const newUrl = `${baseUrl}/${countryName.toLowerCase()}`;
 					window.location.href = newUrl;
 				})(document.getElementById('globeViz') as HTMLElement);
-			document.getElementById('globeViz') as HTMLElement;
+
+			// Set random point of view after initializing the Globe instance
+			const randomLng = Math.random() * 180 - 90;
+			globeInstance.pointOfView({
+				lat: 0,
+				lng: randomLng,
+			});
 		}
 	});
 </script>
