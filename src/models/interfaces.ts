@@ -10,3 +10,9 @@ export interface Coffee {
     "James' comments": string;
     "Ed's comments": string;
 }
+
+export interface countryProductionProps {
+    rank: number;
+    country: string;
+    metric_tons: number;
+}

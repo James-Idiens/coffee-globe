@@ -1,5 +1,6 @@
 <script lang="ts">
 	import coffeeData from '$lib/coffeedata.json';
+	import CountryChecklist from '../../components/CountryChecklist.svelte';
 
 	const coffees = coffeeData.coffees;
 </script>
@@ -25,6 +26,7 @@
 		</div>
 	</div>
 </div>
+<CountryChecklist />
 
 <style>
 	.custom-img {

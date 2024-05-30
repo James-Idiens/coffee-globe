@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import coffees from '../lib/coffeedata.json'; 
 	import type { Coffee } from '../models/interfaces';
+	import { countriesDoneLength } from '../store/countryNumber';
 
 	export let Globe;
 
@@ -71,6 +72,14 @@
 			});
 		}
 	});
+
+	let doneLength: number
+	countriesDoneLength.subscribe(value => {
+    doneLength = value
+  });
 </script>
 
+<div>
+	<h1 class="text-2xl">Number of Countries Tried: {doneLength}</h1>
+</div>
 <div id="globeViz"></div>
