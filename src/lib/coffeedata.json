@@ -227,7 +227,19 @@
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
 			"James' comments": "Dark roasted by C1 Coffee only suitable as an espresso or milk based drink. The roast level is too dark to appreciate the origin characteristics.",
 			"Ed's comments": ""
-		
+		},
+		{
+			"country": "India",
+			"region": "South India",
+			"tastingNotes": ["Blueberry", "Burnt Carmel"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "Moonsoon Malabar",
+			"image": "https://sevenbeans.co/cdn/shop/products/2048x2048-05.jpg?v=1647571294",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg",
+			"James' comments": "Moonsoon Malabar is renowned for its low acidity making it easy to drink. Not incredibly complex but nice through the chemex.",
+			"Ed's comments": ""
+			
 		}
 	]
 }

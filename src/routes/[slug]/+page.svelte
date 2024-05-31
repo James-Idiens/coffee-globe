@@ -61,16 +61,4 @@
 	{:else}
 		<p class="text-white col-span-1">Country not found!</p>
 	{/if}
-	<!-- svelte-ignore a11y-invalid-attribute -->
-	<a href="javascript:history.back()" class="absolute top-3 left-3 z-10">
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			stroke="currentColor"
-			class="w-8 h-8 text-white"
-		>
-			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-		</svg>
-	</a>
 </div>
