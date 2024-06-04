@@ -16,24 +16,21 @@
 	const countriesTriedSet = new Set(countriesTried);
 
 	let countriesLeft: string[] = [];
-	let countriesDone: string[] = [];
 
 	function checkCountries() {
 		topCountries.forEach((country: string) => {
-			if (countriesTriedSet.has(country)) {
-				countriesDone.push(country);
-			} else {
+			if (!countriesTriedSet.has(country)) {
 				countriesLeft.push(country);
 			}
-			countriesLeft.sort();
-			countriesDone.sort();
 		});
+		countriesLeft.sort();
 	}
 
 	checkCountries();
 
 	// Export the data as props
 	export let displayOption = 'countriesLeft';
+	console.log(countriesLeft);
 </script>
 
 {#if displayOption === 'countriesLeft'}
@@ -44,14 +41,18 @@
 	</div>
 {:else if displayOption === 'countriesDoneLength'}
 	<div>
-		<p class="text-l">{countriesDone.length}</p>
+		<p class="text-l">{countriesTriedSet.size}</p>
 	</div>
 {:else if displayOption === 'countriesDone'}
 	<div>
-		{#each countriesDone as country}
-			<div>
+		{#each Array.from(countriesTriedSet).sort() as country}
+			<div id="countriesTried">
 				<p>{country}</p>
 			</div>
 		{/each}
+	</div>
+{:else}
+	<div>
+		<p>Invalid display option</p>
 	</div>
 {/if}
