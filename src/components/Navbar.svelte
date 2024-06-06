@@ -9,13 +9,12 @@
 
 <nav class="fixed z-50 top-0 left-0 w-full bg-transparent text-white p-4">
 	<div class="container mx-auto flex justify-between items-center">
-		<a href="/" class="text-xl font-bold">Coffee Globe</a>
-		<ul class="flex space-x-4">
+		<a href="/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-green-300 to-emerald-600">Coffee Globe</a>
+		<ul class="flex space-x-4 text-sm md:text-lg">
 			<li><a href="/" class="hover:text-gray-300">Home</a></li>
 			<li><a href="/countries" class="hover:text-gray-300">90's Version</a></li>
 			<li class="relative">
 				<button
-					
 					class="hover:text-gray-300 flex items-center"
 					on:click|preventDefault={toggleDropdown}
 				>
@@ -34,7 +33,7 @@
 				{#if showDropdown}
 					<div
 						role="menu"
-						class="absolute left-auto right-0 mt-2 w-44 bg-gray-800 rounded-md shadow-lg p-2 dropdown-menu"
+						class="absolute left-auto right-0 mt-2 w-44 bg-gray-800 rounded-md shadow-lg p-2 overflow-y-scroll max-h-[90vh] whitespace-normal overflow-wrap break-words scrollbar-hide text-base"
 						tabindex="0"
 						aria-label="menu"
 					>
@@ -47,10 +46,7 @@
 </nav>
 
 <style>
-	/* Add your custom styles here */
-	.dropdown-menu :global(p) {
-		white-space: normal;
-		overflow-wrap: break-word;
-		word-wrap: break-word;
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
 	}
 </style>
