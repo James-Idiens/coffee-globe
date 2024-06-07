@@ -1,7 +1,7 @@
 <script lang="ts">
 	import coffeeData from '$lib/coffeedata.json';
 
-	const coffees = coffeeData.coffees;
+	const coffees = coffeeData.coffees.sort((a, b) => a.country.localeCompare(b.country));
 </script>
 
 <div class="bg-fixed bg-center bg-cover custom-img">

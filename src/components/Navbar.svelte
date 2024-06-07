@@ -5,9 +5,10 @@
 	function toggleDropdown() {
 		showDropdown = !showDropdown;
 	}
+	
 </script>
 
-<nav class="fixed z-50 top-0 left-0 w-full bg-transparent text-white p-4">
+<nav class="absolute z-50 top-0 left-0 w-full bg-transparent text-white p-4">
 	<div class="container mx-auto flex justify-between items-center">
 		<a href="/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-green-300 to-emerald-600">Coffee Globe</a>
 		<ul class="flex space-x-4 text-sm md:text-lg">

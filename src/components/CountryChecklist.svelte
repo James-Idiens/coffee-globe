@@ -30,7 +30,6 @@
 
 	// Export the data as props
 	export let displayOption = 'countriesLeft';
-	console.log(countriesLeft);
 </script>
 
 {#if displayOption === 'countriesLeft'}
