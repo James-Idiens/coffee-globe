@@ -5,12 +5,16 @@
 	function toggleDropdown() {
 		showDropdown = !showDropdown;
 	}
-	
 </script>
 
 <nav class="absolute z-50 top-0 left-0 w-full bg-transparent text-white p-4">
 	<div class="container mx-auto flex justify-between items-center">
-		<a href="/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-green-300 to-emerald-600">Coffee Globe</a>
+		<a
+			href="/"
+			class="text-xl font-playfair font-medium font-italic bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-200 hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-500"
+		>
+			Single Origin Odyssey
+		</a>
 		<ul class="flex space-x-4 text-sm md:text-lg">
 			<li><a href="/" class="hover:text-gray-300">Home</a></li>
 			<li><a href="/countries" class="hover:text-gray-300">90's Version</a></li>

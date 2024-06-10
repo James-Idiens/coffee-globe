@@ -8,49 +8,75 @@
 	let coffee: Coffee | undefined;
 
 	let continentColor: string = '';
+	let isLoading = true;
 
 	const asia = 'bg-gradient-to-r from-red-600 via-yellow-500 to-blue-600';
 	const africa = 'bg-gradient-to-r from-orange-600 via-yellow-600 to-green-600';
 	const northAmerica = 'bg-gradient-to-r from-red-500 via-white to-blue-500';
 	const southAmerica = 'bg-gradient-to-r from-green-500 via-yellow-500 to-blue-500';
-	const antarctica = 'bg-gradient-to-r from-blue-100 via-blue-300 to-white';
+	const fallback = 'bg-gradient-to-r from-blue-100 via-blue-300 to-white';
 	const europe = 'bg-gradient-to-r from-blue-500 via-purple-500 to-red-500';
 	const oceania = 'bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600';
 
 	onMount(async () => {
-		if (slug) {
-			const countryName = slug ? slug.replace(/-/g, ' ') : '';
+		try {
+			if (slug) {
+				const countryName = slug ? slug.replace(/-/g, ' ') : '';
 
-			coffee = coffeeData.coffees.find(
-				//@ts-ignore
-				(c: Coffee) => c.country.toLowerCase() === countryName.toLowerCase()
-			);
+				coffee = coffeeData.coffees.find(
+					//@ts-ignore
+					(c: Coffee) => c.country.toLowerCase() === countryName.toLowerCase()
+				);
+			}
 
+			const response = await fetch('src/lib/ne_110m_admin_0_countries.geojson');
+			const continentData = await response.json();
+			// find the continent of the country
+			// feature.properties.ADMIN to match with coffee.country and then get the continent which is feature.properties.CONTINENT
+			const continent = continentData.features.find(
+				(feature: any) => feature.properties.ADMIN === coffee?.country
+			)?.properties.CONTINENT;
+
+			// if else to set the background color of the existing gradient div
+			continentColor =
+				continent === 'Asia'
+					? asia
+					: continent === 'Africa'
+						? africa
+						: continent === 'North America'
+							? northAmerica
+							: continent === 'South America'
+								? southAmerica
+								: continent === 'Europe'
+									? europe
+									: continent === 'Oceania'
+										? oceania
+										: fallback;
+		} catch (error) {
+			console.error('Error loading data:', error);
+		} finally {
+			isLoading = false; // Set isLoading to false once data is loaded
 		}
-		const response = await fetch('src/lib/ne_110m_admin_0_countries.geojson');
-		const continentData = await response.json();
-		// find the continent of the country
-		// feature.properties.ADMIN to mtach with coffee.country and then get the continent which is feature.properties.CONTINENT
-		const continent = continentData.features.find(
-			(feature: any) => feature.properties.ADMIN === coffee?.country
-		)?.properties.CONTINENT;
-
-		// if else to set the background color of the existing gradient div
-		continentColor = continent === 'Asia' ? asia :
-			continent === 'Africa' ? africa :
-			continent === 'North America' ? northAmerica :
-			continent === 'South America' ? southAmerica :
-			continent === 'Antarctica' ? antarctica :
-			continent === 'Europe' ? europe :
-			continent === 'Oceania' ? oceania : '';
-
 	});
 </script>
 
 <div
 	class="bg-black-100 min-h-screen overflow-y-auto flex flex-col md:flex-row justify-center items-center relative"
 >
-	{#if coffee}
+	{#if isLoading}
+		<!-- Loading Spinner -->
+		<div class="flex justify-center items-center h-screen">
+			<svg class="animate-spin h-7 w-7 text-white" viewBox="0 0 24 24">
+				<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+				<path
+					class="opacity-75"
+					fill="currentColor"
+					d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+				/>
+			</svg>
+		</div>
+	{:else if coffee}
+		<!-- Existing Coffee Details -->
 		<div
 			class="mt-[90px] lg:mt-0 flex-1 w-full md:w-1/2 grid grid-cols-1 max-w-3xl justify-items-center p-4"
 		>
@@ -66,7 +92,7 @@
 				<div class="h-auto w-full lg:w-[500px] relative group">
 					<div
 						class="{continentColor} absolute -inset-1 rounded-md blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
-					></div>
+					/>
 					<div class="relative bg-black-100 rounded-lg overflow-hidden p-[2px]">
 						<div class="p-4 md:py-4 md:px-8">
 							<h1 class="text-3xl font-bold text-white mb-4">Country: {coffee.country}</h1>
@@ -95,6 +121,6 @@
 			</p>
 		</div>
 	{:else}
-		<p class="text-white">Country not found!</p>
+		<p class="text-white">We haven't made it to {slug.replace(/-/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}, but rest assured, if they grow coffee, we'll be buying it.</p>
 	{/if}
 </div>

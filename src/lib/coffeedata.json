@@ -45,7 +45,7 @@
 			"variety": "Catimor, Typica and Red Leaf Typica",
 			"image": "https://coffeesupreme.com/cdn/shop/products/IndonesiaSIBALANGA_1296x.png?v=1659065485",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
-			"James' comments": "Luxurious thick smooth body with plenty of cocoa notes. Excellent darker roast espresso.",
+			"James' comments": "Luxurious thick smooth body with plenty of cocoa notes. Excellent example of what a dark roast espresso should be.",
 			"Ed's comments": ""
 		},
 		{
@@ -81,7 +81,7 @@
 			"variety": "Red Bourbon",
 			"image": "https://vivaceespresso.co.nz/cdn/shop/files/Burundi1kg_700x.png?v=1687817392",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg",
-			"James' comments": "Open the bag and you're greeted with a distrubingly dark roast. Disgusting as a filter coffee, but redeems itself as a long black or with milk.",
+			"James' comments": "Open the bag and you're greeted with a distrubingly dark roast. Absolutely disgusting as a filter coffee, but redeems itself as a long black or with milk.",
 			"Ed's comments": ""
 		},
 		{
@@ -91,7 +91,7 @@
 			"producer": "Various",
 			"process": "Washed",
 			"variety": "Catimor, Typica",
-			"image": "#",
+			"image": "https://sunwaveshop.co.nz/wp-content/uploads/2021/12/8401-e1641417767235.jpg",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
 			"James' comments": "As the number two coffee producer in the world, we were obligated to try this.",
 			"Ed's comments": ""
@@ -178,7 +178,7 @@
 			"image": "#",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
 			"James' comments": "Delicate on the palate, with a light body and reminiscent of a Kenyan coffee. Excellent as a pour over in the Kalita Wave.",
-			"Ed's comments": "This coffee is a great example of a washed African coffee. It has a bright acidity and a light body. It is a great coffee to have as a pour over or as a filter coffee."
+			"Ed's comments": ""
 		},
 		{
 			"country": "Papua New Guinea",
@@ -225,7 +225,7 @@
 			"variety": "Typica, Bourbon",
 			"image": "",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
-			"James' comments": "Dark roasted by C1 Coffee only suitable as an espresso or milk based drink. The roast level is too dark to appreciate the origin characteristics.",
+			"James' comments": "Dark roast is an understatement. C1 Coffee has delivered a roast level that leaves you unable to appreciate the origin characteristics.",
 			"Ed's comments": ""
 		},
 		{
@@ -249,7 +249,7 @@
 			"variety": "SL14",
 			"image": "https://mtatkinson.co.nz/cdn/shop/products/Ugandan200gSQ_1024x1024.jpg?v=1597882597",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg",
-			"James' comments": "Super fresh medium roast with a good balance. Not too acidic, not too sweet. Comes out really well as espresso.",
+			"James' comments": "Super fresh medium roast with a good balance. Not too acidic, not too sweet. Comes out really well as espresso. Doesn't have a bouquet of personality, but you could drink it every day.",
 			"Ed's comments": ""
 		},
 		{
@@ -261,8 +261,20 @@
 			"variety": "Catimor, Catuaí, Caturra",
 			"image": "https://mtatkinson.co.nz/cdn/shop/products/Nicaraguan_200g_1024x1024.jpg?v=1597882655",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg",
-			"James' comments": "Pretty unremarkable. Only suitable as espresso.",
+			"James' comments": "Only suitable as espresso, but a good one at that. Predominantly chocolatey with a hint of nuttiness, this is good black or with milk as a flat white.",
 			"Ed's comments": ""
+		},
+		{
+			"country": "Bolivia",
+			"region": "Caranavi",
+			"tastingNotes": ["Crème brûlée", "Dried Cherry", "Pecan", "Golden Syrup"],
+			"producer": "El Mirador",
+			"process": "Washed (60hr fermentation)",
+			"variety": "Caturra",
+			"image": "https://redrabbitcoffee.co.nz/cdn/shop/files/RRWebsiteProductPedroV2_1696x1696.jpg?v=1718077869",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg",
+			"James' comments": "Lightly roasted with a well balanced acidity. Nice as a pour over, where the sweetness comes through along with the fruitiness. The roaster has done a good job with this one, however it perhaps lacks some uniqueness.",
+			"Ed's comments": ""			
 		}
 	]
 }
