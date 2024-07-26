@@ -115,7 +115,7 @@
 			"producer": "The Merlaeku Family x Beanspire",
 			"process": "Natural",
 			"variety": "Catuai, Typica, Chiang Mai",
-			"image": "https://th.bing.com/th/id/OIP.YjTiOTc-zzzYCKbIPqkvlwHaHa?rs=1&pid=ImgDetMain",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7T4EC6hlRr7Il1_uMv9fafJ14FcbRCe-aGQ&s",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
 			"James' comments": "If you close your eyes and convince yourself, you could taste the coconut. Interesting, but not a favourite.",
 			"Ed's comments": ""
@@ -275,6 +275,18 @@
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg",
 			"James' comments": "Lightly roasted with a well balanced acidity. Nice as a pour over, where the sweetness comes through along with the fruitiness. The roaster has done a good job with this one, however it perhaps lacks some uniqueness.",
 			"Ed's comments": ""			
+		},
+		{
+			"country": "Ecuador",
+			"region": "Santa Helena",
+			"tastingNotes": ["Banana, Chardonnay, Pineapple, Ginger Beer"],
+			"producer": "Hacienda Legrand",
+			"process": "Anerobic natural",
+			"variety": "EcuRobusta",
+			"image": "./ecuador.webp",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg",
+			"James' comments": "Not often you see a robusta coffee, let alone one from Ecuador. This is a unique coffee with a unique flavour profile. A pungent aroma, yet a well balanced roast. Chardonnay can be tasted with the slight oakiness on the palate.",
+			"Ed's comments": ""
 		}
 	]
 }

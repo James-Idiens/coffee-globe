@@ -1,10 +1,22 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import CountryChecklist from './CountryChecklist.svelte';
 	let showDropdown = false;
 
 	function toggleDropdown() {
 		showDropdown = !showDropdown;
 	}
+	// if the user clicks outside the dropdown, close it
+	// if the user clicks anywhere on the nav close it
+
+	onMount(() => {
+		document.addEventListener('click', (event) => {
+			const dropdown = document.querySelector('.absolute');
+			if (dropdown && !dropdown.contains(event.target as Node)) {
+				showDropdown = false;
+			}
+		});
+	});
 </script>
 
 <nav class="absolute z-50 top-0 left-0 w-full bg-transparent text-white p-4">
