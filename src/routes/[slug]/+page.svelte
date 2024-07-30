@@ -31,13 +31,11 @@
 
 			const response = await fetch('src/lib/ne_110m_admin_0_countries.geojson');
 			const continentData = await response.json();
-			// find the continent of the country
-			// feature.properties.ADMIN to match with coffee.country and then get the continent which is feature.properties.CONTINENT
+
 			const continent = continentData.features.find(
 				(feature: any) => feature.properties.ADMIN === coffee?.country
 			)?.properties.CONTINENT;
 
-			// if else to set the background color of the existing gradient div
 			continentColor =
 				continent === 'Asia'
 					? asia
@@ -58,69 +56,283 @@
 			isLoading = false; // Set isLoading to false once data is loaded
 		}
 	});
+
+	let angle = 0;
+	let startX: number | null = null;
+	let isDragging = false;
+
+	function galleryspin(sign: string) {
+		const spinner = document.querySelector('#spinner') as HTMLElement;
+		if (!sign) {
+			angle += 90;
+		} else {
+			angle -= 90;
+		}
+		spinner.style.transform = `rotateY(${angle}deg)`;
+	}
+
+	function handleTouchStart(event: TouchEvent) {
+		startX = event.touches[0].clientX;
+		isDragging = true;
+	}
+
+	function handleTouchMove(event: TouchEvent) {
+		if (!isDragging) return;
+
+		const currentX = event.touches[0].clientX;
+		const deltaX = currentX - (startX as number);
+
+		if (Math.abs(deltaX) > 50) {
+			if (deltaX > 0) {
+				galleryspin('-');
+			} else {
+				galleryspin('');
+			}
+			isDragging = false;
+		}
+	}
+
+	function handleTouchEnd() {
+		startX = null;
+		isDragging = false;
+	}
+
+	function handleMouseDown(event: MouseEvent) {
+		startX = event.clientX;
+		isDragging = true;
+	}
+
+	function handleMouseMove(event: MouseEvent) {
+		if (!isDragging) return;
+
+		const currentX = event.clientX;
+		const deltaX = currentX - (startX as number);
+
+		if (Math.abs(deltaX) > 50) {
+			if (deltaX > 0) {
+				galleryspin('');
+			} else {
+				galleryspin('-');
+			}
+			isDragging = false;
+		}
+	}
+
+	function handleMouseUp() {
+		startX = null;
+		isDragging = false;
+	}
+
+	onMount(() => {
+		window.addEventListener('mouseup', handleMouseUp);
+		return () => {
+			window.removeEventListener('mouseup', handleMouseUp);
+		};
+	});
 </script>
 
-<div
-	class="bg-black-100 min-h-screen overflow-y-auto flex flex-col md:flex-row justify-center items-center relative"
->
-	{#if isLoading}
-		<!-- Loading Spinner -->
-		<div class="flex justify-center items-center h-screen">
-			<svg class="animate-spin h-7 w-7 text-white" viewBox="0 0 24 24">
-				<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-				<path
-					class="opacity-75"
-					fill="currentColor"
-					d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-				/>
-			</svg>
-		</div>
-	{:else if coffee}
-		<!-- Existing Coffee Details -->
-		<div
-			class="mt-[90px] lg:mt-0 flex-1 w-full md:w-1/2 grid grid-cols-1 max-w-3xl justify-items-center p-4"
-		>
-			<div class="relative">
-				<div class="w-3/4 lg:w-full sm:max-w-md mx-auto mb-8">
-					<img
-						src={coffee.image}
-						alt="Coffee"
-						class="w-full rounded-md h-auto md:h-64 object-scale-down object-center"
+<div class="bg-black-100 min-h-screen w-full overflow-y-auto flex items-center justify-center">
+	<div class="container">
+		{#if isLoading}
+			<!-- Loading Spinner -->
+			<div class="flex justify-center items-center h-screen">
+				<svg class="animate-spin h-7 w-7 text-white" viewBox="0 0 24 24">
+					<circle
+						class="opacity-25"
+						cx="12"
+						cy="12"
+						r="10"
+						stroke="currentColor"
+						stroke-width="4"
 					/>
-				</div>
-
-				<div class="h-auto w-full lg:w-[500px] relative group">
-					<div
-						class="{continentColor} absolute -inset-1 rounded-md blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+					<path
+						class="opacity-75"
+						fill="currentColor"
+						d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
 					/>
-					<div class="relative bg-black-100 rounded-lg overflow-hidden p-[2px]">
-						<div class="p-4 md:py-4 md:px-8">
-							<h1 class="text-3xl font-bold text-white mb-4">Country: {coffee.country}</h1>
-							<p class="text-gray-400"><span class="font-bold">Region: </span>{coffee.region}</p>
-							<p class="text-gray-400">
-								<span class="font-bold">Producer: </span>{coffee.producer}
-							</p>
-							<p class="text-gray-400"><span class="font-bold">Process: </span>{coffee.process}</p>
-							<p class="text-gray-400"><span class="font-bold">Variety: </span>{coffee.variety}</p>
-							<p class="text-gray-400">
-								<span class="font-bold">Tasting Notes: </span>{coffee.tastingNotes.join(', ')}
-							</p>
+				</svg>
+			</div>
+		{:else if coffee}
+			<!-- Existing Coffee Details -->
+			<div
+				id="carousel"
+				class="p-10 mb-12 overflow-hidden relative"
+				on:touchstart={handleTouchStart}
+				on:touchmove={handleTouchMove}
+				on:touchend={handleTouchEnd}
+				on:mousedown={handleMouseDown}
+				on:mousemove={handleMouseMove}
+				role="button"
+				tabindex="0"
+			>
+				<figure id="spinner">
+					<div class="card">
+						<!-- Card 1 Content -->
+						<div class="relative">
+							<div class="w-3/4 lg:w-full sm:max-w-md mx-auto mb-8">
+								<img
+									src={coffee.image}
+									alt="Coffee"
+									class="w-full rounded-md h-auto md:h-64 object-scale-down object-center"
+								/>
+							</div>
 						</div>
 					</div>
-				</div>
+					<div class="card p-6">
+						<!-- Card 2 Content -->
+						<div class="h-auto w-full lg:w-[500px] relative group">
+							<div
+								class="{continentColor} absolute -inset-1 rounded-md blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+							/>
+							<div class="relative bg-black-100 rounded-lg overflow-hidden p-[2px]">
+								<div class="p-4 md:py-4 md:px-8">
+									<h1 class="text-3xl font-bold text-white mb-4">Country: {coffee.country}</h1>
+									<p class="text-gray-400">
+										<span class="font-bold">Region: </span>{coffee.region}
+									</p>
+									<p class="text-gray-400">
+										<span class="font-bold">Producer: </span>{coffee.producer}
+									</p>
+									<p class="text-gray-400">
+										<span class="font-bold">Process: </span>{coffee.process}
+									</p>
+									<p class="text-gray-400">
+										<span class="font-bold">Variety: </span>{coffee.variety}
+									</p>
+									<p class="text-gray-400">
+										<span class="font-bold">Tasting Notes: </span>{coffee.tastingNotes.join(', ')}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card p-6">
+						<!-- Card 3 Content -->
+
+						<div class="h-auto w-full relative group">
+							<div
+								class="bg-gradient-to-r from-gray-100 to-gray-300 absolute -inset-1 rounded-md blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+							/>
+							<div class="relative bg-black-100 rounded-lg overflow-hidden p-6">
+								<span class="font-medium text-lg text-white">Ed's Comments</span><br />
+								<i class="text-white">{coffee["Ed's comments"]}</i>
+							</div>
+						</div>
+					</div>
+					<div class="card p-6">
+						<!-- Card 4 Content -->
+						<div class="h-auto w-full relative group">
+							<div
+								class="bg-gradient-to-r from-gray-100 to-gray-300 absolute -inset-1 rounded-md blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+							/>
+							<div class="relative bg-black-100 rounded-lg overflow-hidden p-6">
+								<span class="font-medium text-lg text-white">James' Comments:</span><br />
+								<i class="text-white">{coffee["James' comments"]}</i>
+							</div>
+						</div>
+					</div>
+				</figure>
 			</div>
-		</div>
-		<div class="flex-1 text-white p-4 md:px-32 md:order-last my-auto">
-			<p>
-				<span class="font-medium text-lg">Ed's Comments:</span><br />
-				<i>{coffee["Ed's comments"]}</i>
+		{:else}
+			<p class="text-white">
+				We haven't made it to {slug
+					.replace(/-/g, ' ')
+					.split(' ')
+					.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+					.join(' ')}, but rest assured, if they grow coffee, we'll be buying it.
 			</p>
-			<p class="mt-2">
-				<span class="font-medium text-lg">James' Comments:</span><br />
-				<i>{coffee["James' comments"]}</i>
-			</p>
+		{/if}
+		<div class="flex justify-between items-center mt-4">
+			<button
+				class="text-white text-2xl cursor-pointer mx-4"
+				on:click={() => galleryspin('')}
+				aria-label="Previous"
+			>
+				&lt;
+			</button>
+			<button
+				class="text-white text-base font-light cursor-pointer mx-4 back-button"
+				on:click={() => window.history.back()}
+				aria-label="Back"
+			>
+				<span class="pr-1">&#8592;</span><span class="font-light text-base">Back</span>
+			</button>
+			<button
+				class="text-white text-2xl cursor-pointer mx-4"
+				on:click={() => galleryspin('-')}
+				aria-label="Next"
+			>
+				&gt;
+			</button>
 		</div>
-	{:else}
-		<p class="text-white">We haven't made it to {slug.replace(/-/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}, but rest assured, if they grow coffee, we'll be buying it.</p>
-	{/if}
+	</div>
 </div>
+
+<style>
+	#carousel {
+		perspective: 1200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	#spinner {
+		transform-style: preserve-3d;
+		height: 300px;
+		transform-origin: 50% 50% -150px;
+		transition: transform 1s;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card {
+		position: absolute;
+		transform-origin: 50% 50% -150px;
+		color: black;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 400px;
+		height: 300px;
+	}
+
+	.card:nth-child(1) {
+		transform: rotateY(0deg) translateZ(150px);
+	}
+
+	.card:nth-child(2) {
+		transform: rotateY(90deg) translateZ(150px);
+	}
+
+	.card:nth-child(3) {
+		transform: rotateY(180deg) translateZ(150px);
+	}
+
+	.card:nth-child(4) {
+		transform: rotateY(270deg) translateZ(150px);
+	}
+
+	/* @media (min-width: 640px) {
+		.card {
+			width: 100px;
+			height: 70px;
+		}
+	} */
+
+	@media (min-width: 300px) {
+		.card {
+			width: 300px;
+			height: 200px;
+		}
+	}
+	@media (min-width: 640px) {
+		.card {
+			width: 400px;
+			height: 300px;
+		}
+	}
+</style>

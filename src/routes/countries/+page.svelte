@@ -6,7 +6,7 @@
 
 <div class="bg-fixed bg-center bg-cover custom-img">
 	<!-- Country Cards Section -->
-	<div class="container mx-auto py-12 md:px-9">
+	<div class="container mx-auto pt-[80px] md:py-12 md:px-9">
 		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
 			{#each coffees as coffee}
 				<a
