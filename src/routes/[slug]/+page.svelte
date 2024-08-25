@@ -131,6 +131,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Single Origin Odyssey</title>
+	<meta name="description" content="Single origin coffee from around the world" />
+</svelte:head>
+
 <div class="bg-black-100 min-h-screen w-full overflow-y-auto flex items-center justify-center">
 	<div class="container">
 		{#if isLoading}
