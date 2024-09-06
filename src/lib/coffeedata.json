@@ -67,7 +67,7 @@
 			"producer": "Roger Ureña Hidalgo",
 			"process": "Natural",
 			"variety": "Gesha",
-			"image": "#",
+			"image": "./costa-rica.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg",
 			"James' comments": "A rare and expensive coffee, gesha is known for its floral and fruity notes. The flavour profile comes through better with age.",
 			"Ed's comments": ""
@@ -151,7 +151,7 @@
 			"producer": "SOPACDI",
 			"process": "Washed",
 			"variety": "Bourbon",
-			"image": "#",
+			"image": "drc.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg",
 			"James' comments": "Hand roasted by Harris House's own chief roaster Ed, this was an experimental batch with surprising results.",
 			"Ed's comments": ""
@@ -285,7 +285,7 @@
 			"variety": "EcuRobusta",
 			"image": "./ecuador.webp",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg",
-			"James' comments": "Not often you see a robusta coffee, let alone one from Ecuador. This is a unique coffee with a unique flavour profile. A pungent aroma, yet a well balanced roast. Chardonnay can be tasted with the slight oakiness on the palate.",
+			"James' comments": "Not often you see a robusta coffee, let alone one from Ecuador. This is a unique coffee with a unique flavour profile. A pungent aroma, yet a well balanced roast. Chardonnay can be tasted with the slight oakiness on the palate. Pretty brutal getting through a 250g bag though.",
 			"Ed's comments": ""
 		},
 		{
@@ -297,7 +297,19 @@
 			"variety": "Unknown",
 			"image": "https://static.wixstatic.com/media/0f8b3c_19c7a9f7b04a45ddb88400b5b7a5daa5~mv2_d_2000_1999_s_2.jpg/v1/fill/w_543,h_543,al_c,q_85,usm_0.66_1.00_0.01/0f8b3c_19c7a9f7b04a45ddb88400b5b7a5daa5~mv2_d_2000_1999_s_2.jpg",
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg",
-			"James' comments": "",
+			"James' comments": "Dark roasted and tastes like something familiar that I can't quite put my finger on. Another country down.",
+			"Ed's comments": ""
+		},
+		{
+			"country": "Guatemala",
+			"region": "Ayarza",
+			"tastingNotes": ["Caramel", "Apricot", "Raw Sugar"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "Caturra, Catuai",
+			"image": "./guatemala.webp",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg",
+			"James' comments": "Says espresso blend on the packet but it's light enough to be a filter.",
 			"Ed's comments": ""
 		}
 	]
