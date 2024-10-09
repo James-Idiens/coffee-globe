@@ -239,13 +239,15 @@
 				</figure>
 			</div>
 		{:else}
-			<p class="text-white">
-				We haven't made it to {slug
-					.replace(/-/g, ' ')
-					.split(' ')
-					.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-					.join(' ')}, but rest assured, if they grow coffee, we'll be buying it.
-			</p>
+			<div class="flex justify-center">
+				<p class="text-white text-center">
+					We haven't made it to {slug
+						.replace(/-/g, ' ')
+						.split(' ')
+						.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+						.join(' ')}, but rest assured, if they grow coffee, we'll be buying it.
+				</p>
+			</div>
 		{/if}
 		<div class="flex justify-between items-center mt-4">
 			<button

@@ -311,6 +311,18 @@
 			"flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg",
 			"James' comments": "Says espresso blend on the packet but it's light enough to be a filter.",
 			"Ed's comments": ""
+		},
+		{
+			"country": "Cuba",
+			"region": "Sierra Maestra",
+			"tastingNotes": ["Dark Chocolate", "Cocoa", "Floral"],
+			"producer": "Various",
+			"process": "Washed",
+			"variety": "Caturra",
+			"image": "https://www.coffeeandtealovers.co.nz/site/file/product/2574/maisonfrancois-05.jpg",
+			"flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg",
+			"James' comments": "We guessed it would be a dark roast, and we were right. Saying floral in the tasting notes is a laugh. Would probably pair well with a cigar.",
+			"Ed's comments": ""
 		}
 	]
 }

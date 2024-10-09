@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import ImageCard from './ImageCard.svelte';
 
 	let angle = 0;
 	let startX: number | null = null;
