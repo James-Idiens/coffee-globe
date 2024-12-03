@@ -1,0 +1,52 @@
+[
+    {
+      "farm": "El Diviso",
+      "origin": "Huila - Colombia",
+      "processing": "Natural",
+      "processor": "Cofinet",
+      "producer": "Liarco Rodriguez",
+      "altitude": "1700 - 1900 m.a.s.l",
+      "varietal": "Gesha",
+      "tastingNotes": "Strawberry Sherbert, Blackberry",
+      "rating": "9",
+      "review": "Off the charts with flavour. Blackberry is the dominant note. Expectional coffee."
+    },
+    {
+      "farm": "Masha",
+      "origin": "Gatara, Kayanza Province - Burundi",
+      "processing": "Honey (Semi-Washed)",
+      "processor": "Co-Operative",
+      "producer": "Small Holders",
+      "altitude": "1672 m.a.s.l",
+      "varietal": "Bourbon",
+      "tastingNotes": "Lychee, Orange, Papaya, White Wine",
+      "rating": "4",
+      "review": "Lacking personality. Inoffensive but nothing to it."
+    },
+    {
+      "farm": "Villa Betulia",
+      "origin": "Huila - Colombia",
+      "processing": "EF2 Natural (Extended Fermentation Two)",
+      "processor": "Cofinet",
+      "producer": "Luis Anibal Calderon",
+      "altitude": "1600 m.a.s.l",
+      "varietal": "Ombligon",
+      "tastingNotes": "Pinot Gris, Fermented Pineapple, Orange Citrus, White Sugar",
+      "rating": "8",
+      "review": "Very interesting coffee. Geniunely has a pinot gris flavour. Closer to a wine than a coffee."
+    },
+    {
+      "farm": "Less than 1 hectare on average",
+      "origin": "Mount Kenya - Kenya",
+      "processing": "Fully Washed",
+      "processor": "Kaimugumo Factory",
+      "processorType": "Co-Operative",
+      "producer": "1500 Small Holder Farmers",
+      "altitude": "1800 m.a.s.l",
+      "varietal": "Sl-28, Ruiru 11, Batian",
+      "tastingNotes": "Raspberries, Stone fruit, Maple Syrup, and Orange",
+      "rating": "6",
+      "review": "Delicate and stone fruit on the palate. Not the most interesting Kenyan coffee, but good variety from yesterday."
+    }
+  ]
+  
