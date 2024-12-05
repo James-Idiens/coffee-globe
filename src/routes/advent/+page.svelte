@@ -10,11 +10,12 @@
 </svelte:head>
 
 <div class="bg-black-100 text-white min-h-screen w-full overflow-y-auto flex items-center justify-center">
-<div class="container max-w-xl mx-auto p-4">
+<div class="pt-16 container max-w-xl mx-auto p-4">
     <h1 class="text-2xl font-bold mb-4">Advent Calendar Coffee Reviews</h1>
-    {#each adventCalendar as coffee}
+    {#each adventCalendar as coffee, index}
         <div class="mb-4 p-4 border rounded shadow">
-            <h2 class="text-xl font-bold">{coffee.farm}</h2>
+            <h2 class="text-xl font-bold">Day {index + 1}</h2>
+            <p><strong>Farm:</strong> {coffee.farm}</p>
             <p><strong>Origin:</strong> {coffee.origin}</p>
             <p><strong>Processing:</strong> {coffee.processing}</p>
             <p><strong>Processor:</strong> {coffee.processor}</p>

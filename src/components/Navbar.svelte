@@ -29,6 +29,7 @@
 		</a>
 		<ul class="flex space-x-4 text-sm md:text-lg">
 			<li><a href="/" class="hover:text-gray-300">Home</a></li>
+			<li><a href='/advent' class="hover:text-gray-300">Advent Calendar</a></li>
 			<li><a href="/countries" class="hover:text-gray-300">90's Version</a></li>
 			<li class="relative">
 				<button
